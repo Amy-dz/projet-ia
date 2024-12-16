@@ -1,0 +1,49 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/************************************************************** FOOTERRRR ********************************************************************/
+/************************************************************** FOOTERRRR ********************************************************************/
+
+.footer-link {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #f70776;
+  animation: animate__fadeIn; /* Animation au survol */
+}
+
+.footer-icon {
+  display: inline-block;
+  color: #ddd;
+  font-size: 1.5rem;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-icon:hover {
+  color: #f70776;
+  animation: animate__pulse; /* Durée de l'animation */
+}
+
+.mailtel a {
+  text-decoration: none;
+  color: #ffffff; /* Couleur par défaut */
+  transition: color 0.3s; /* Animation au survol */
+}
+
+.mailtel a:hover {
+  text-decoration: underline;
+  text-decoration-color: #f70776;
+}
+
+.footerh5 {
+  color: #f70776;
+  font-weight: 600;
+}
+
+/************************************************************** FINFOOTERRRR ********************************************************************/
