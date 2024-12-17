@@ -3,9 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <!-------------------------------------------------------LIENS----------------------------------------------------------------------------->
+ <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- AOS (Animate On Scroll) CSS -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"> -->
+
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/soraya.css">
 </head>
 <body>
-    
+   <section class="glossary-section" id="glossary">
+  <div class="container">
+    <h2 class="glitch-text" data-text="Glossaire des Termes Techniques" style="text-align: center; padding-bottom: 50px;">
+        Glossaire des Termes Techniques
+    </h2>
+    <div class="row">
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="glossary-item">
+          <h4 class="term">
+            <i class="fas fa-robot"></i> AI
+          </h4>
+          <p class="definition">L'Intelligence Artificielle (IA) désigne des systèmes informatiques capables de réaliser des tâches nécessitant normalement l'intelligence humaine, comme l'apprentissage, la reconnaissance de formes ou la prise de décision.</p>
+          <p><strong>Exemple concret:</strong> Les assistants vocaux comme Siri et Alexa sont des exemples d'IA. Ils reconnaissent votre voix, comprennent vos demandes et répondent de manière appropriée.</p>
+        </div>
+        <div class="glossary-item">
+          <h4 class="term">
+            <i class="fas fa-cogs"></i> AI Générative
+          </h4>
+          <p class="definition">L'IA générative fait référence à des modèles qui génèrent de nouveaux contenus (texte, image, musique) de manière autonome, souvent en apprenant à partir de grandes quantités de données.</p>
+          <p><strong>Exemple concret:</strong> GPT-3, un modèle de langage développé par OpenAI, peut générer des articles de blog, des histoires ou même du code informatique sur demande.</p>
+        </div>
+        <div class="glossary-item">
+          <h4 class="term">
+            <i class="fas fa-code"></i> LLM
+          </h4>
+          <p class="definition">Les LLM (Large Language Models) sont des modèles d'IA qui sont formés sur d'énormes quantités de texte et sont capables de générer et comprendre des langages humains.</p>
+          <p><strong>Exemple concret:</strong> GPT-3 et BERT sont des LLM. GPT-3 est capable de répondre à des questions, générer des poèmes, et même traduire des textes entre différentes langues.</p>
+        </div>
+        <div class="glossary-item">
+          <h4 class="term">
+            <i class="fas fa-language"></i> NLP
+          </h4>
+          <p class="definition">Le traitement du langage naturel (NLP) est une branche de l'IA qui se concentre sur l'interaction entre les ordinateurs et les langues humaines.</p>
+          <p><strong>Exemple concret:</strong> Google Translate utilise le NLP pour traduire des phrases d'une langue à une autre, tout en comprenant le contexte des mots dans une phrase.</p>
+        </div>
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="glossary-item">
+          <h4 class="term">
+            <i class="fas fa-github"></i> Modèles Open Source
+          </h4>
+          <p class="definition">Les modèles Open Source sont des modèles d'IA dont le code source est mis à disposition pour la communauté, permettant ainsi de les modifier et de les déployer à grande échelle.</p>
+          <p><strong>Exemple concret:</strong> HuggingFace offre des modèles Open Source comme BERT et GPT-2. Ces modèles peuvent être téléchargés et utilisés par les développeurs pour leurs propres projets.</p>
+        </div>
+        <div class="glossary-item">
+          <h4 class="term">
+            <i class="fas fa-cloud"></i> LLaMA
+          </h4>
+          <p class="definition">LLaMA (Large Language Model Meta AI) est un modèle de langage développé par Meta (anciennement Facebook), conçu pour effectuer des tâches de NLP tout en étant plus léger que les modèles traditionnels.</p>
+          <p><strong>Exemple concret:</strong> LLaMA est conçu pour être plus rapide et moins coûteux à déployer tout en maintenant une performance élevée dans des tâches de traitement du langage naturel, comme la génération de texte et la classification.</p>
+        </div>
+        <div class="glossary-item">
+          <h4 class="term">
+            <i class="fas fa-rocket"></i> Mistral
+          </h4>
+          <p class="definition">Mistral est un modèle de langage open-source qui s'inscrit dans la catégorie des modèles d'IA permettant de générer et de comprendre du texte dans de multiples langues.</p>
+          <p><strong>Exemple concret:</strong> Mistral permet de réaliser des tâches multilingues telles que la traduction automatique et l'analyse de sentiment dans plusieurs langues avec une grande précision.</p>
+        </div>
+        <div class="glossary-item">
+          <h4 class="term">
+            <i class="fas fa-bolt"></i> Falcon
+          </h4>
+          <p class="definition">Falcon est une série de modèles d'IA développée par HuggingFace, optimisée pour la rapidité et la qualité dans le traitement de tâches de NLP complexes.</p>
+          <p><strong>Exemple concret:</strong> Falcon est utilisé pour des tâches comme la recherche d'informations dans des bases de données ou la génération de résumés de texte en temps réel.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6" data-aos="fade-up">
+        <div class="glossary-item">
+          <h4 class="term">
+            <i class="fas fa-users"></i> HuggingFace
+          </h4>
+          <p class="definition">HuggingFace est une plateforme collaborative pour la gestion, le partage et le déploiement de modèles d'IA, notamment des modèles de langage comme BERT et GPT.</p>
+          <p><strong>Exemple concret:</strong> Les chercheurs et les entreprises utilisent HuggingFace pour partager des modèles de NLP pré-formés, ce qui permet à d'autres d'intégrer facilement ces modèles dans leurs projets.</p>
+        </div>
+        <div class="glossary-item">
+          <h4 class="term">
+            <i class="fas fa-keyboard"></i> Prompt
+          </h4>
+          <p class="definition">Un "prompt" est une entrée textuelle ou une question donnée à un modèle d'IA pour générer une réponse ou effectuer une tâche spécifique.</p>
+          <p><strong>Exemple concret:</strong> Si vous demandez à GPT-3 "Écris-moi une histoire sur un dragon", ce texte ("Écris-moi une histoire sur un dragon") est le prompt qui guide la génération de la réponse par le modèle.</p>
+        </div>
+        <div class="glossary-item">
+          <h4 class="term">
+            <i class="fas fa-cogs"></i> System Prompt
+          </h4>
+          <p class="definition">Le "system prompt" est une consigne ou un cadre donné à un modèle pour guider sa manière de répondre à un utilisateur ou d’effectuer une tâche.</p>
+          <p><strong>Exemple concret:</strong> Un system prompt peut être une instruction comme "Agis en tant que conseiller en carrière", qui définit le rôle du modèle lors de l'interaction avec un utilisateur.</p>
+        </div>
+      </div>
+      <div class="col-md-6" data-aos="fade-up">
+        <div class="glossary-item">
+          <h4 class="term">
+            <i class="fas fa-temperature-low"></i> Temperature
+          </h4>
+          <p class="definition">La "temperature" dans les modèles de génération de texte détermine le degré de créativité et de diversité des réponses. Une température élevée génère des réponses plus variées.</p>
+          <p><strong>Exemple concret:</strong> Une température de 0.7 génère des réponses plus diversifiées et créatives, tandis qu'une température de 0.2 produit des réponses plus conservatrices et prévisibles.</p>
+        </div>
+        <div class="glossary-item">
+          <h4 class="term">
+            <i class="fas fa-stream"></i> Tokens
+          </h4>
+          <p class="definition">Les "tokens" sont des éléments de base de l’entrée ou de la sortie d’un modèle, souvent des mots ou des sous-mots, traités par l’IA pour générer des réponses.</p>
+          <p><strong>Exemple concret:</strong> Dans une phrase comme "Chat GPT est génial", les tokens seraient "Chat", "GPT", "est", "génial". Le modèle traite ces tokens pour comprendre et répondre à la demande.</p>
+        </div>
+        <div class="glossary-item">
+          <h4 class="term">
+            <i class="fas fa-laptop-code"></i> LM Studio
+          </h4>
+          <p class="definition">LM Studio est une plateforme permettant de créer, fine-tuner et déployer des modèles de langage (Language Models) en utilisant des outils adaptés aux besoins des utilisateurs.</p>
+          <p><strong>Exemple concret:</strong> LM Studio permet aux entreprises de créer des modèles de langage personnalisés pour automatiser des réponses aux clients sur des sites web ou dans des centres d'appels.</p>
+        </div>
+        <div class="glossary-item">
+          <h4 class="term">
+            <i class="fas fa-brain"></i> Méthode Feynman
+          </h4>
+          <p class="definition">La Méthode Feynman est une technique d'apprentissage basée sur l'explication claire et simplifiée d'un concept afin de mieux comprendre et mémoriser.</p>
+          <p><strong>Exemple concret:</strong> Pour comprendre un concept complexe comme le fonctionnement des neurones dans le cerveau, vous l'expliquez à un ami en termes simples. Cette explication vous aide à mieux saisir le sujet.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12" data-aos="fade-up">
+        <div class="glossary-item">
+          <h4 class="term">
+            <i class="fas fa-code-branch"></i> Leetcode
+          </h4>
+          <p class="definition">Leetcode est une plateforme de préparation aux entretiens techniques, où les utilisateurs peuvent résoudre des problèmes algorithmiques et de codage pour améliorer leurs compétences.</p>
+          <p><strong>Exemple concret:</strong> Si vous préparez un entretien pour une entreprise de technologie, vous pourriez résoudre des problèmes de codage sur Leetcode pour vous entraîner aux questions techniques typiques.</p>
+        </div>
+        <div class="glossary-item">
+          <h4 class="term">
+            <i class="fas fa-map-signs"></i> Roadmap
+          </h4>
+          <p class="definition">Une roadmap est un plan stratégique qui présente les étapes et objectifs clés nécessaires pour atteindre un certain but, souvent utilisé dans le développement de projets IA.</p>
+          <p><strong>Exemple concret:</strong> Une roadmap pour le développement d'un modèle IA pourrait inclure des étapes telles que la collecte de données, la pré-formation du modèle, l'évaluation de la performance et le déploiement en production.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      
+      
+      
+
+   <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  AOS.init(); // Initialisation de AOS
+</script>
 </body>
 </html>
