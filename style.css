@@ -5,6 +5,7 @@ body {
   margin: 0;
   background: linear-gradient(to right, #041069, #5934de, #131fa8);
   min-height: 100vh;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .navbar {
@@ -22,6 +23,10 @@ body {
   text-decoration: underline blueviolet 1.5px;
   color: #5527f5;
   transition: 1s;
+}
+
+.active:hover {
+  color: #7d5afb;
 }
 
 /***************************************************************** HERO SECTION ***********************************************************/
@@ -46,15 +51,16 @@ body {
 }
 
 .text h1 {
-  color: #938dde;
+  font-family: "Orbitron", sans-serif;
+  color: #c0bcf8;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
   margin-left: 20px;
 }
 
 .text h2 {
-  color: #5b4ed2;
+  color: #a097f7;
   font-size: 2rem;
   margin-left: 20px;
   margin-right: 20px;
@@ -77,19 +83,18 @@ body {
 }
 
 .btnhero {
-  margin-left: 20px;
+  margin-left: 30%;
   color: #ffffff;
   font-size: 20px;
   font-weight: 600;
-  background-color: #ffffff;
-  border-color: #ffffff;
-  padding: 10px 40px;
+  background-color: #7773c5;
+  border-color: #19208e;
+  padding: 10px 100px;
 }
 
 .btnhero:hover {
-  margin-left: 20px;
   color: #ffffff;
-  background-color: #13a6c46f;
+  background-color: #6d0fb0b0;
   border-color: rgb(255, 255, 255);
 }
 
@@ -99,7 +104,7 @@ body {
 }
 
 .glow-on-hover:hover {
-  box-shadow: 0 0 20px #f70776 !important;
+  box-shadow: 0 0 20px #1593dc !important;
   transform: scale(1.05);
 }
 
