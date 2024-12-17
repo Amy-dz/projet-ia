@@ -1,0 +1,173 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right, #041069, #5934de, #131fa8);
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: #00000074 !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.274);
+}
+
+.nav-link:hover {
+  text-decoration: underline blueviolet 1.5px;
+  color: #5527f5;
+  transition: 1s;
+}
+
+/***************************************************************** HERO SECTION ***********************************************************/
+/***************************************************************** HERO SECTION ***********************************************************/
+/***************************************************************** HERO SECTION ***********************************************************/
+
+.parallax {
+  background: url("img/r2d2.jpg") no-repeat;
+  height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100vh;
+  justify-content: center;
+}
+
+.text h1 {
+  color: #938dde;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+.text h2 {
+  color: #5b4ed2;
+  font-size: 2rem;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.text p {
+  font-size: 1.2rem;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.686);
+  width: 60%;
+  overflow: hidden;
+  align-items: center;
+}
+
+.btnhero {
+  margin-left: 20px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #ffffff;
+  border-color: #ffffff;
+  padding: 10px 40px;
+}
+
+.btnhero:hover {
+  margin-left: 20px;
+  color: #ffffff;
+  background-color: #13a6c46f;
+  border-color: rgb(255, 255, 255);
+}
+
+.glow-on-hover {
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 10px #8707f7 !important;
+}
+
+.glow-on-hover:hover {
+  box-shadow: 0 0 20px #f70776 !important;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .text h1 {
+    font-size: 5rem;
+    margin-left: 20px;
+  }
+
+  .text h2 {
+    font-size: 1.3rem;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+
+  .text p {
+    font-size: 1.2rem;
+    margin-left: 20px;
+    margin-right: 30px;
+  }
+  .hero {
+    width: 100%;
+  }
+  .btnhero {
+    margin-left: 20%;
+  }
+  .btnhero:hover {
+    margin-left: 20%;
+  }
+}
+
+/***************************************************************** HERO SECTION ***********************************************************/
+/***************************************************************** HERO SECTION ***********************************************************/
+/***************************************************************** HERO SECTION ***********************************************************/
+/************************************************************** FOOTERRRR ********************************************************************/
+/************************************************************** FOOTERRRR ********************************************************************/
+
+.footer-link {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #7a95fa;
+  animation: animate__fadeIn; /* Animation au survol */
+}
+
+.footer-icon {
+  display: inline-block;
+  color: #ddd;
+  font-size: 1.5rem;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-icon:hover {
+  color: #7a95fa;
+  animation: animate__pulse; /* Durée de l'animation */
+}
+
+.mailtel a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s; /* Animation au survol */
+}
+
+.mailtel a:hover {
+  text-decoration: underline 2px;
+  text-decoration-color: #7a95fa;
+}
+
+.footerh5 {
+  font-size: 25px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+/************************************************************** FINFOOTERRRR ********************************************************************/
