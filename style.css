@@ -145,7 +145,258 @@ body {
   }
 }
 
+@media (max-width: 500px) {
+  .text h1 {
+    font-size: 38px;
+    margin-left: 20px;
+    margin-right: 20px !important;
+  }
+
+  .text h2 {
+    font-size: 1.3rem;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+
+  .text p {
+    font-size: 1.2rem;
+    margin-left: 20px;
+    margin-right: 30px !important;
+  }
+  .hero {
+    width: 100%;
+  }
+  .btnhero {
+    margin-left: 70px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #7773c5;
+    border-color: #19208e;
+    padding: 10px 10px;
+  }
+  .logo {
+    width: 120px;
+    height: auto;
+  }
+}
+
 /***************************************************************** HERO SECTION ***********************************************************/
+/***************************************************************** GLOSSAIRE ***********************************************************/
+/***************************************************************** GLOSSAIRE ***********************************************************/
+
+/* Style principal du texte */
+.glitch-text {
+  position: relative;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  animation: flicker 1.5s infinite linear;
+}
+
+/* Glitch avant et après */
+.glitch-text::before,
+.glitch-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0; /* Assure une couverture complète */
+  color: white;
+  z-index: -1;
+  transform-origin: center; /* Transformations centrées */
+}
+
+/* Animation pour l'effet glitch */
+.glitch-text::before {
+  animation: glitch-before 1.5s infinite linear;
+}
+
+.glitch-text::after {
+  animation: glitch-after 1.5s infinite linear;
+}
+
+/* Animation pour le pseudo-élément before */
+@keyframes glitch-before {
+  0% {
+    clip: rect(0, 9999px, 40px, 0);
+    transform: translateX(-3px);
+  }
+  50% {
+    clip: rect(60px, 9999px, 100px, 0);
+    transform: translateX(3px);
+  }
+  100% {
+    clip: rect(20px, 9999px, 80px, 0);
+    transform: translateX(-3px);
+  }
+}
+
+/* Animation pour le pseudo-élément after */
+@keyframes glitch-after {
+  0% {
+    clip: rect(20px, 9999px, 60px, 0);
+    transform: translateX(3px);
+  }
+  50% {
+    clip: rect(40px, 9999px, 80px, 0);
+    transform: translateX(-3px);
+  }
+  100% {
+    clip: rect(10px, 9999px, 50px, 0);
+    transform: translateX(3px);
+  }
+}
+
+/* Animation de scintillement */
+@keyframes flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+.glossary-section {
+  background-color: #0d0d0d;
+  color: #e3d7f7;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.glossaryrow {
+  display: flex !important;
+  justify-content: center !important;
+  text-align: center !important;
+  align-items: center !important;
+}
+
+.section-title {
+  font-family: "Orbitron", sans-serif;
+  color: #7d5afb;
+  font-size: 3rem;
+  margin-bottom: 40px;
+  text-shadow: 0 0 10px #c0bcf8, 0 0 20px #c0bcf8, 0 0 30px #8b7df5;
+}
+
+.glossary-item {
+  background: linear-gradient(to right, #222, #111);
+  border: 2px solid #7d5afb;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glossary-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #7d5afb, 0 0 20px rgba(125, 90, 250, 0.8);
+}
+
+.term {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #bcb2e1;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.glossary-item .term i {
+  margin-right: 10px;
+  color: #7d5afb;
+  font-size: 1.6rem;
+  transition: color 0.3s ease;
+}
+
+.glossary-item:hover .term i {
+  color: #ffffff;
+}
+
+.definition {
+  font-size: 1.1rem;
+  color: #a097f7;
+}
+
+@media (max-width: 1200px) {
+  .glossary-item {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .term {
+    font-size: 1.2rem;
+  }
+
+  .definition {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .glossary-item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .term {
+    font-size: 1.1rem;
+    align-items: flex-start;
+  }
+
+  .definition {
+    font-size: 0.95rem;
+  }
+
+  .row {
+    flex-direction: column !important;
+    align-items: stretch;
+  }
+
+  .glossary-item {
+    margin-bottom: 15px;
+  }
+
+  .glossary-item .term i {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .term {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+
+  .definition {
+    font-size: 0.9rem;
+  }
+
+  .glossary-item {
+    padding: 15px;
+  }
+
+  .glossary-item .term {
+    font-size: 1.2rem;
+  }
+
+  .glossary-item .term i {
+    font-size: 1.5rem;
+  }
+}
+
+/***************************************************************** GLOSSAIRE ***********************************************************/
 /***************************************************************** COMMANDES ***********************************************************/
 /***************************************************************** COMMANDES ***********************************************************/
 
@@ -155,6 +406,13 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   background-color: rgba(0, 0, 0, 0.686) !important;
+}
+
+.commandesrow {
+  display: flex !important;
+  justify-content: center !important;
+  text-align: center !important;
+  align-items: center !important;
 }
 
 .command-card-body {
@@ -189,9 +447,14 @@ body {
   margin-bottom: 60px;
 }
 
+/***************************************************************** COMMANDES ***********************************************************/
 /************************************************************** FOOTERRRR ********************************************************************/
 /************************************************************** FOOTERRRR ********************************************************************/
 
+.footcenter {
+  display: flex;
+  align-items: center;
+}
 .footer-link {
   color: #ddd;
   text-decoration: none;
