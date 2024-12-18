@@ -138,6 +138,11 @@ body {
 .definition {
   font-size: 1.1rem;
   color: #a097f7;
+  font-weight: bold;
+}
+
+p{
+    font-weight: none;
 }
 
 @media (max-width: 1200px) {

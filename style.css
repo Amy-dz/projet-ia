@@ -271,8 +271,6 @@ body {
 
 .glossaryrow {
   display: flex !important;
-  justify-content: center !important;
-  text-align: center !important;
   align-items: center !important;
 }
 
@@ -303,7 +301,7 @@ body {
   font-family: "Orbitron", sans-serif;
   font-size: 1.4rem;
   font-weight: bold;
-  color: #bcb2e1;
+  color: #ffffff;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
@@ -323,6 +321,12 @@ body {
 .definition {
   font-size: 1.1rem;
   color: #a097f7;
+  text-align: start;
+}
+
+.glossary-item p {
+
+  text-align: start;
 }
 
 @media (max-width: 1200px) {
