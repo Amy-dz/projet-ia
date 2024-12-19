@@ -34,7 +34,7 @@ body {
 /***************************************************************** HERO SECTION ***********************************************************/
 
 .parallax {
-  background: url("img/r2d2.jpg") no-repeat;
+  background: url("../img/r2d2.jpg") no-repeat;
   height: 100vh;
   background-position: center;
   background-attachment: fixed;
@@ -42,7 +42,7 @@ body {
   overflow: hidden;
 }
 .parallax1 {
-  background: url("img/r2d2.jpg") no-repeat;
+  background: url("../img/r2d2.jpg") no-repeat;
   height: 20vh;
   background-position: center;
   background-attachment: fixed;
