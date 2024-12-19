@@ -544,6 +544,8 @@ body {
   border: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 
 .card:hover {
@@ -559,8 +561,9 @@ body {
 }
 
 .imgl {
-  width: 100%;
-  height: 600px;
+  padding-top: 20px;
+  width: 250px !important;
+  height: 450px !important;
 }
 
 /* Contenu de la carte */
