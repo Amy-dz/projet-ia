@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.r2d2-ia.com/schemas/sitemap/0.9">
+
+  <!-- Page d'accueil -->
+  <url>
+    <loc>https://www.r2d2-ia.com/</loc>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
+
+  <!-- Politique de confidentialité -->
+  <url>
+    <loc>https://www.r2d2-ia.com/politique-de-confidentialité</loc>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <!-- Mentions légales -->
+  <url>
+    <loc>https://www.r2d2-ia.com/mentions-légales</loc>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+</urlset>
