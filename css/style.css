@@ -185,7 +185,6 @@ body {
 /***************************************************************** GLOSSAIRE ***********************************************************/
 /***************************************************************** GLOSSAIRE ***********************************************************/
 
-/* Style principal du texte */
 .glitch-text {
   position: relative;
   font-size: 3rem;
@@ -202,7 +201,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0; /* Assure une couverture complète */
+  right: 0; 
   color: white;
   z-index: -1;
   transform-origin: center; /* Transformations centrées */
@@ -217,7 +216,7 @@ body {
   animation: glitch-after 1.5s infinite linear;
 }
 
-/* Animation pour le pseudo-élément before */
+
 @keyframes glitch-before {
   0% {
     clip: rect(0, 9999px, 40px, 0);
@@ -233,7 +232,7 @@ body {
   }
 }
 
-/* Animation pour le pseudo-élément after */
+
 @keyframes glitch-after {
   0% {
     clip: rect(20px, 9999px, 60px, 0);
@@ -430,14 +429,14 @@ body {
   margin-bottom: 20px;
 }
 
-/* Applique un fond violet à l'accordion */
+
 .accordion-button {
-  background-color: #bcb2e1; /* Violet */
+  background-color: #bcb2e1; 
   color: #000000;
 }
 
 .accordion-body {
-  background-color: black; /* Fond légèrement plus clair dans le corps de l'accordion */
+  background-color: black; 
   color: #bcb2e1;
 }
 
@@ -492,7 +491,7 @@ body {
   position: relative;
   overflow: hidden;
   border-radius: 20px;
-  width: 300px; /* Vous pouvez ajuster la largeur selon vos besoins */
+  width: 300px; 
 }
 
 .cookieCard::before,
@@ -529,7 +528,7 @@ body {
 /************************************************************** EXEMPLES ********************************************************************/
 /************************************************************** EXEMPLES ********************************************************************/
 
-/* Section principale */
+
 .rowclass {
   display: flex;
   flex-wrap: wrap;
@@ -537,7 +536,7 @@ body {
   padding: 20px;
 }
 
-/* Style des cartes */
+
 .card {
   background-color: rgb(46, 14, 75);
   color: aliceblue;
@@ -552,7 +551,7 @@ body {
   transform: scale(1.05);
 }
 
-/* Images uniformes */
+
 .card img {
   object-fit: cover;
   width: 100%;
@@ -566,7 +565,7 @@ body {
   height: 450px !important;
 }
 
-/* Contenu de la carte */
+
 .card-body {
   text-align: center;
   padding: 15px;
@@ -597,7 +596,7 @@ body {
 
 .footer-link:hover {
   color: #7a95fa;
-  animation: animate__fadeIn; /* Animation au survol */
+  animation: animate__fadeIn;
 }
 
 .footer-icon {
@@ -610,13 +609,13 @@ body {
 
 .footer-icon:hover {
   color: #7a95fa;
-  animation: animate__pulse; /* Durée de l'animation */
+  animation: animate__pulse;
 }
 
 .mailtel a {
   text-decoration: none;
   color: #ffffff;
-  transition: color 0.3s; /* Animation au survol */
+  transition: color 0.3s; 
 }
 
 .mailtel a:hover {
